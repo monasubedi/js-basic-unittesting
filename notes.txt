@@ -42,3 +42,6 @@ typescript
 - improved code documentation
 - stronger codebase with fewer runtime issues
 
+
+
+ npx husky add .husky/pre-push "npx vitest run"
