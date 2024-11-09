@@ -50,6 +50,7 @@ export function isPriceInRange(price, min, max) {
 export function isValidUsername(username) {
   const minLength = 5;
   const maxLength = 15;
+  if (!username) return false;
 
   return username.length >= minLength && username.length <= maxLength;
 }
@@ -70,12 +71,13 @@ export function canDrive(age, countryCode) {
 
 // Lesson: Testing asynchronous code
 export function fetchData() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const data = [1, 2, 3];
-      resolve(data);
-    });
-  });
+  return Promise.reject({ reason: 'Operation Failed' });
+  // return new Promise((resolve) => {
+  //   setTimeout(() => {
+  //     const data = [1, 2, 3];
+  //     resolve(data);
+  //   });
+  // });
 }
 
 // Lesson: Setup and teardown

@@ -1,0 +1,44 @@
+Unit Testing
+- A form of automated testing where we write code to test our code.
+Benefits
+- Detects Bugs Early
+- Facilitates Refactoring
+- Improves Code Quality
+
+
+A mock function is a function that imitates the behaviour of a function.
+
+TrustWorthy Tests
+- are deterministic.
+- are not dependent on random data.
+- are not dependent on current date/time.
+- are not dependent on global state.
+
+Static Analysis Tools
+- Tools that analyze source code without executing it.
+
+- catch potential errors early in the development process.
+- enforce coding standards and best practices.
+- improve code Quality
+- ensure consistent code quality across the team.
+
+
+prettier
+npm i -D prettier
+npx prettier . --write
+
+eslint
+- a popular code quality checker for javascript
+
+- go to eslint.org and setup your eslint
+- then run npx eslint .
+- you will see the errors to fix
+- if you want to fix errors which are fixable, run this - npx esline . --fix
+
+also you can set the rules in eslint.config.js
+
+typescript
+- catch type-related issues at compile time
+- improved code documentation
+- stronger codebase with fewer runtime issues
+
